@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Carousel</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <script src="jquery-1.8.0.min.js"></script>
+        <script src="jquery-ui-1.9.0.min.js"></script>
+        <script src="carousel.js"></script>
+    </head>
+    <body>
+
+        <div id="carousel" class="carousel"></div>
+
+        <script type="text/javascript">
+            $(function() {
+                $("#carousel").carousel(
+                    { 
+                        autoplay: true, 
+                        items: [
+                        {
+                            "Image":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/The-Matterhorn-640.jpg",
+                            "Uri":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/The-Matterhorn-640.jpg",
+                            "Title":"The Matterhorn"
+                        },
+                        {
+                            "Image":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/Chinese-traditional-dragon-boat-racing-640.jpg",
+                            "Uri":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/Chinese-traditional-dragon-boat-racing-640.jpg",
+                            "Title":"Dragon Boat Racing"
+                        },
+                        {
+                            "Image":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/East-of-Iceland-640.jpg",
+                            "Uri":"http://www.thisiscolossal.com/wp-content/uploads/2013/01/East-of-Iceland-640.jpg",
+                            "Title":"Glacial Ice"
+                        }] 
+                    });
+            });
+        </script>
+
+    </body>
+</html>
