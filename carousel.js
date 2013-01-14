@@ -106,18 +106,18 @@
             item.elem = $item;
             $item.data('item', item);
 
+            if (item.Uri) {
+                $item.addClass('link');
+                $item.click(function (e) { self._onItemClick.call(this, self); });
+            }
+
+            if (item.Title) {
+                $item.prop('title', item.Title);
+            }
+
             var $img = $item.find('img');
+            
             $img.load(function () {
-
-                if (item.Uri) {
-                    $item.addClass('link');
-                    $item.click(function (e) { self._onItemClick.call(this, self); });
-                }
-
-                if (item.Title) {
-                    $item.prop('title', item.Title);
-                }
-
                 callback(item);
             }).prop('src', item.Image);
         },
