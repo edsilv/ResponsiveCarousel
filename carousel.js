@@ -4,7 +4,7 @@
     $.widget("ui.carousel", {
 
         options: {
-            autoPlayInterval: 3000,
+            autoplayInterval: 3000,
             itemFadeDuration: 500,
             autoplay: false
         },
@@ -56,7 +56,7 @@
                     }
 
                     self._changeIndex(nextIndex);
-                }, self.options.autoPlayInterval);
+                }, self.options.autoplayInterval);
             }
         },
 
