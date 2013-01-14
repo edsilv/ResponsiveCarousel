@@ -4,9 +4,9 @@
     $.widget("ui.carousel", {
 
         options: {
+            autoplay: false,
             autoplayInterval: 3000,
-            itemFadeDuration: 500,
-            autoplay: false
+            itemFadeDuration: 500
         },
 
         itemTemplate: $('<div class="item"><img/></div>'),
